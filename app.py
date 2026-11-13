@@ -1,10 +1,5 @@
 from __future__ import annotations
 
-import time
-import random
-import tracemalloc
-from typing import Callable
-
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
