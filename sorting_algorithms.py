@@ -12,14 +12,11 @@ def selection_sort(arr: list[Number]) -> SortResult:
     comparisons = swaps = 0
     n = len(a)
     for i in range(n - 1):
-        min_idx = i
         for j in range(i + 1, n):
             comparisons += 1
-            if a[j] < a[min_idx]:
-                min_idx = j
-        if min_idx != i:
-            a[i], a[min_idx] = a[min_idx], a[i]
-            swaps += 1
+            if a[j] < a[j]:
+                a[i], a[j] = a[j], a[i]
+                swaps += 1
     return a, comparisons, swaps
 
 
