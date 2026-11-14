@@ -10,4 +10,4 @@
 - `sorting_algorithms.py` — реализации сортировок, счётчики, assert-тесты.
 - `benchmarking.py` — генерация пяти типов данных, измерения, fitting.
 
-ссылка на streamlit - http://10.158.104.118:8502
+ссылка на streamlit - http://10.158.104.118:8503
