@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from sorting_algorithms import (
-    SortResult, selection_sort, bubble_sort, counting_sort, timsort,
+    SortResult, selection_sort, bubble_sort, counting_sort,
     SORTS, make_sort_steps, validate_sort,
 )
 from benchmarking import (
@@ -16,7 +16,7 @@ from benchmarking import (
 
 st.set_page_config(page_title="Анализ алгоритмов сортировки", page_icon="📊", layout="wide")
 st.title("Эмпирический и теоретический анализ алгоритмов сортировки")
-st.caption("Selection sort · Bubble sort с флагом · Counting sort · Timsort")
+st.caption("Selection sort · Bubble sort с флагом · Counting sort")
 
 with st.sidebar:
     st.header("Параметры эксперимента")
@@ -200,4 +200,4 @@ if st.button("Запустить набор assert-тестов"):
     except AssertionError as exc:
         st.exception(exc)
 
-st.info("Важно: результаты зависят от оборудования, версии Python и фоновой нагрузки. Для защиты объясните счётчики операций, устройство run-ов Timsort и методику замеров.")
+
